@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStart - Landing Page</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">WebStart</div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Courses</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Kickstart Your Web Development Journey</h2>
+            <p>Learn HTML, CSS, and JavaScript through real projects and modern layouts.</p>
+            <!-- BUTTON SCROLLS TO PROJECTS -->
+            <a href="#projects" class="btn hero-btn">Explore Courses</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Web Development">
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h2>Courses</h2>
+        <p>Here are some real-world projects you will build:</p>
+
+        <div class="cards-row">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="">
+                <h3>Libraries and Frameworks</h3>
+                <p>Build a fully responsive website using libraries and frameworks.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800" alt="">
+                <h3>JavaScript </h3>
+                <p>Create calculators, games, and interactive UI elements.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" alt="">
+                <h3>HTML and CSS</h3>
+                <p>Design modern landing pages with animations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section dark">
+        <h2>Our Services</h2>
+
+        <div class="cards-row">
+            <div class="card service-card">
+                <h3>Web Development</h3>
+                <p>Custom websites built using the latest technologies.</p>
+            </div>
+
+            <div class="card service-card">
+                <h3>UI/UX Design</h3>
+                <p>Modern and clean designs for web & mobile apps.</p>
+            </div>
+
+            <div class="card service-card">
+                <h3>Mentorship</h3>
+                <p>1-on-1 coaching for beginners & intermediate learners.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 WebStart. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT FOR MOBILE MENU -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
